@@ -54,7 +54,7 @@ class Json
 				$output_fields[$name[0]] = isset($name[1]) ? $name[1] : $name[0];
 			}
 
-			$fields = array_keys($fields);
+			$fields = array_keys($output_fields);
 		}
 		
 		$sql = $this->entries_channel_sql();
